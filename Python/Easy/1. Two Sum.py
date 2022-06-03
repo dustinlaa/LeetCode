@@ -43,3 +43,8 @@ class Solution(object):
         self.twoSum(nums, target)
 
 s = Solution([2,7,11,15], 9)
+
+"""
+Runtime: 3258 ms, faster than 27.10% of Python online submissions for Two Sum.
+Memory Usage: 14.4 MB, less than 46.57% of Python online submissions for Two Sum.
+"""
