@@ -80,6 +80,6 @@ class Solution(object):
 s = Solution([9,9,9,9,9,9,9], [9,9,9,9])
 
 """
-Runtime: 88 ms, faster than 31.90% of Python online submissions for Add Two Numbers.
-Memory Usage: 13.6 MB, less than 18.65% of Python online submissions for Add Two Numbers.
+Runtime: 75 ms, faster than 49.02% of Python online submissions for Add Two Numbers.
+Memory Usage: 13.4 MB, less than 89.74% of Python online submissions for Add Two Numbers.
 """
