@@ -8,3 +8,8 @@ print(zig)
 
 print(12 % 10)
 print(120//10)
+
+print((2**31)-1)
+print(pow(2,31)-1)
+
+print((((2**31)-1)//10) % 10)
