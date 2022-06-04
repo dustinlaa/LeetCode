@@ -51,3 +51,8 @@ class Solution(object):
         self.longestPalindrome(s)
 
 s = Solution("babadbbaabb")
+
+"""
+Runtime: 1372 ms, faster than 40.31% of Python online submissions for Longest Palindromic Substring.
+Memory Usage: 13.5 MB, less than 87.71% of Python online submissions for Longest Palindromic Substring.
+"""
