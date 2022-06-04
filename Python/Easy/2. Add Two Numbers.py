@@ -66,18 +66,42 @@ class Solution(object):
                 temp = ListNode() # adds nodes in reverse
                 temp.val = sum[i] # temp node gets the val and its next node points to the previous node's next
                 temp.next = rtnList.next
-                rtnList.next = temp # makes the temp node the next node 
-        print(str(rtnList))
+                rtnList.next = temp # makes the temp node the next node
+
+############## LOCAL TESTING ONLY ############################   
+        print(repr(rtnList))
+##############################################################   
         return rtnList
-    ##########################################
+
     def __init__(self, l1, l2):
-        self.l1 = ListNode()
         self.l1 = l1
-        self.l2 = ListNode()
         self.l2 = l2
         self.addTwoNumbers(l1, l2)
 
-s = Solution([9,9,9,9,9,9,9], [9,9,9,9])
+class ListNode(object): # linked list object
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+    def __repr__(self):
+        output = []
+        while self.next != None:
+            output.append(int(self.val))
+            self = self.next
+        output.append(int(self.val))
+        return str(output)
+
+def create_linked_lst(lst): # creates linked lists from array
+    linked_lst = None
+    for item in reversed(lst):
+        linked_lst = ListNode(item, linked_lst)
+    return linked_lst
+        
+l1arr = [9,9,9,9,9,9,9]
+l1 = create_linked_lst(l1arr)
+l2arr =[9,9,9,9]
+l2 = create_linked_lst(l2arr)
+
+s = Solution(l1, l2)
 
 """
 Runtime: 75 ms, faster than 49.02% of Python online submissions for Add Two Numbers.
