@@ -1,2 +1,4 @@
-arr = [[0] * 5 for i in range(3)]
-print(str(arr))
+output1 = [[0, 0, 0] for i in range(3)]
+output2 = [[0]*3 for i in range(3)]
+print(output1)
+print(output2)
