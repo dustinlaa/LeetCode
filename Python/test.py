@@ -5,3 +5,6 @@ print(output2)
 
 zig = [""]*3
 print(zig)
+
+print(12 % 10)
+print(120//10)
