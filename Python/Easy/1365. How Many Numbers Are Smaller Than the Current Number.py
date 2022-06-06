@@ -42,7 +42,12 @@ class Solution(object):
         for num in nums: # for each num in nums
             output.append(sortedList.index(num)) # adding the index of the num in the sorted list (all numbers before are smaller than current number)
         return output
+############## LOCAL TESTING ONLY ############################   
+    def __init__(self, nums):
+        self.nums = nums
+        self.smallerNumbersThanCurrent(nums)
 
+s = Solution([6,5,4,8])
 """
 Runtime: 71 ms, faster than 72.09% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
 Memory Usage: 13.6 MB, less than 39.11% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
