@@ -45,3 +45,8 @@ class Solution(object):
         self.longestCommonPrefix(strs)
 
 s = Solution(["flower","flow","flight"])
+
+"""
+Runtime: 19 ms, faster than 90.18% of Python online submissions for Longest Common Prefix.
+Memory Usage: 13.7 MB, less than 62.57% of Python online submissions for Longest Common Prefix.
+"""
