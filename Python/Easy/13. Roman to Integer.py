@@ -76,7 +76,7 @@ class Solution(object):
 
 ############## LOCAL TESTING ONLY ############################   
     def __init__(self, s):
-        self.s = S
+        self.s = s
         self.romanToInt(s)
 
 s = Solution("MCMXCIV")
