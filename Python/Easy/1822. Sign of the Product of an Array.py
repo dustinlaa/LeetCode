@@ -55,3 +55,4 @@ class Solution(object):
         self.arraySign(nums)
 
 s = Solution([-1,1,-1,10,-1])
+
