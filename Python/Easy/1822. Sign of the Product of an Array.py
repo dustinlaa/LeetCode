@@ -41,12 +41,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if 0 in nums:
+        if 0 in nums: # if a 0 exists, it will just be 0
             return 0
         output = 1
         for num in nums:
-            if num < 0:
-                output *= -1
+            if num < 0: # anytime a negative appears, just multiply the answer by -1
+                output *= -1 
         return output
 
 
@@ -55,3 +55,8 @@ class Solution(object):
         self.arraySign(nums)
 
 s = Solution([-1,1,-1,10,-1])
+
+"""
+Runtime: 74 ms, faster than 24.32% of Python online submissions for Sign of the Product of an Array.
+Memory Usage: 13.5 MB, less than 52.97% of Python online submissions for Sign of the Product of an Array.
+"""
