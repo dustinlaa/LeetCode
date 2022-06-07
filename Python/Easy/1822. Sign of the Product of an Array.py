@@ -56,10 +56,3 @@ class Solution(object):
 
 s = Solution([-1,1,-1,10,-1])
 
-<<<<<<< HEAD
-=======
-"""
-Runtime: 74 ms, faster than 24.32% of Python online submissions for Sign of the Product of an Array.
-Memory Usage: 13.5 MB, less than 52.97% of Python online submissions for Sign of the Product of an Array.
-"""
->>>>>>> 1822
