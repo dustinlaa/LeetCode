@@ -44,12 +44,13 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        if s == "":
+        if s == "": # string is empty, no changes needed
             return 0
-        elif s == s[::-1]:
+        elif s == s[::-1]: # string is a palindrome
             return 1
         else:
-            return 2
+            return 2 # need at least 2 changes max
+            
     ### solution if you were to only remove by palindromes ##   
     #     steps = 0
     #     currString = s
