@@ -72,7 +72,6 @@ class Solution(object):
         #             else:
         #                 right = mid - 1 # need to decrease value
             
-
 ############## LOCAL TESTING ONLY ############################   
     def __init__(self, numbers, target):
         self.twoSum(numbers, target)
@@ -82,4 +81,10 @@ s = Solution([2,3,4], 6)
 """
 Runtime: 148 ms, faster than 37.87% of Python online submissions for Two Sum II - Input Array Is Sorted.
 Memory Usage: 14.5 MB, less than 23.87% of Python online submissions for Two Sum II - Input Array Is Sorted.
+"""
+
+### binary search ###
+"""
+Runtime: 97 ms, faster than 94.10% of Python online submissions for Two Sum II - Input Array Is Sorted.
+Memory Usage: 15.3 MB, less than 6.26% of Python online submissions for Two Sum II - Input Array Is Sorted.
 """
