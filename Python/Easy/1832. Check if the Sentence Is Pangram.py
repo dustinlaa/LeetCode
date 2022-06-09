@@ -40,8 +40,11 @@ class Solution(object):
         return False
 
     ### alt solution ###
-    # return len(set(sentence)) == 26
-    
+    #     letters = set(sentence)
+    #     if len(letters) == 26:
+    #         return True
+    #     return False
+
 ############## LOCAL TESTING ONLY ############################   
     def __init__(self, s):
         self.checkIfPangram(s)
