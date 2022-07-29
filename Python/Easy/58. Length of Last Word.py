@@ -36,15 +36,15 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        length = len(s)
+        length = len(s) # length of word
         count = 0
         wordFound = False
-        for i in range(length-1, -1, -1):
-            if s[i] != " ":
+        for i in range(length-1, -1, -1): # work backwards 
+            if s[i] != " ": # word found, repeat until end of word
                 count += 1
                 wordFound = True
                 continue
-            if wordFound == True:
+            if wordFound == True: # word found, return true
                 break
         return count
 

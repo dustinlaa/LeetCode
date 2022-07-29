@@ -33,12 +33,12 @@ class Solution(object):
         :rtype: int
         """
         currSum = 0
-        maxSum = nums[0]
-        for digit in nums:
-            if currSum < 0:
-                currSum = 0
-            currSum += digit
-            maxSum = max(maxSum, currSum)
+        maxSum = nums[0] # first value
+        for digit in nums: # go through all values
+            if currSum < 0: # if sum is negative, can't be bigger than the max 
+                currSum = 0 # start over
+            currSum += digit # add current digit
+            maxSum = max(maxSum, currSum) # find max of current sum and the max sum
         return maxSum
 
 ############## LOCAL TESTING ONLY ############################ 
